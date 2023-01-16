@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">openai</span>
+
+<span class="s1">openai.api_key = </span><span class="s2">&quot;//ENTER OPENAI API KEY HERE&quot;</span>
+
+<span class="s3"># Use the ChatGPT model to generate a response to a given prompt</span>
+<span class="s0">def </span><span class="s1">generate_response(prompt):</span>
+    <span class="s1">model_engine = </span><span class="s2">&quot;text-davinci-003&quot;</span>
+    <span class="s1">prompt = (</span><span class="s2">f&quot;</span><span class="s0">{</span><span class="s1">prompt</span><span class="s0">}\n</span><span class="s2">&quot;</span>
+             <span class="s1">)</span>
+
+    <span class="s1">completions = openai.Completion.create(</span>
+        <span class="s1">engine=model_engine</span><span class="s0">,</span>
+        <span class="s1">prompt=prompt</span><span class="s0">,</span>
+        <span class="s1">max_tokens=</span><span class="s4">1024</span><span class="s0">,</span>
+        <span class="s1">n=</span><span class="s4">1</span><span class="s0">,</span>
+        <span class="s1">stop=</span><span class="s0">None,</span>
+        <span class="s1">temperature=</span><span class="s4">0.5</span><span class="s0">,</span>
+    <span class="s1">)</span>
+
+    <span class="s1">message = completions.choices[</span><span class="s4">0</span><span class="s1">].text</span>
+    <span class="s0">return </span><span class="s1">message.strip()</span>
+
+<span class="s0">while True</span><span class="s1">:</span>
+    <span class="s1">query = input(</span><span class="s2">&quot;&gt; &quot;</span><span class="s1">)</span>
+    <span class="s3"># Generate a response using the ChatGPT API</span>
+    <span class="s1">response_text = generate_response(query)</span>
+    <span class="s1">response_text = response_text.capitalize()</span>
+    <span class="s1">print(response_text)</span>
+</pre>
+</body>
+</html>
