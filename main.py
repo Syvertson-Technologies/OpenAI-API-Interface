@@ -30,4 +30,4 @@ while True:
 
 # MIT License
 
-# Code under Syvertson-Technologies, written by Devon Chase and revised by ChatGPT
+# Copyright under Devon Chase, and code was revised by ChatGPT
