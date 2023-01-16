@@ -3,7 +3,7 @@ OpenAI API Interface written by FreeGPT is an opensource code that allows anyone
 
 ## OpenAI Console Access
 
-This project allows users to access the OpenAI API from their console. The project is written in Python and utilizes the openai library. It also uses the transformers library, which is required to be installed in order to run the project.
+This project allows users to access the OpenAI API from their console. The project is written in Python and utilizes the openai library, which is required to be installed in order to run the project.
 
 ## Usage
 
