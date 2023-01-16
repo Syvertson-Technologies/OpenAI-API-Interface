@@ -15,8 +15,6 @@ In order to use the OpenAI API, users must provide their own API key in the main
 
 ## Additional Features
 
-## The project also includes the Cognify.Cleaner module, which contains functions for cleaning text data. These functions can be utilized for pre-processing text before sending it to the API for generation.
-
 ## Note
 
 This project uses the text-davinci-003 API endpoint. This is the highest quality model offered by OpenAI, however it is also the most expensive and slowest processing. If you want to use other API endpoints, you can replace the model_engine variable with desired API endpoint on the OpenAI website, or simply reference the models from this readme.
