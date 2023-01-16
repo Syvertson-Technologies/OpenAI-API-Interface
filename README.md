@@ -46,10 +46,10 @@ If you are not familiar with PyCharm or running a python script, it might be hel
 
 |Available Models  | Cost  |
 | ------------- | ------------- |
-| Davinci  |$0.1200 / 1K tokens |
-| Curie  |$0.0120 / 1K tokens|
-| Babbage  | $0.0024 / 1K tokens  |
-| Ada  | $0.0016 / 1K tokens|
+| text-davinci-003  |$0.1200 / 1K tokens |
+| text-curie-001  |$0.0120 / 1K tokens|
+| text-babbage-001  | $0.0024 / 1K tokens  |
+| text-ada-001  | $0.0016 / 1K tokens|
 
 
 **Please read the terms of service for OpenAI's API usages and requirements. Do not sell or share your API key. I am not responsible for anything you do with this code beyond this repository, and I do not assume any liability for damages or financial losses accrued from using this code. You assume full responsibility for your actions by using this code.**
